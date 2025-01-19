@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Products - Our Team</title>
+    <link rel="stylesheet" href="../../src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .team-member {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-inter">
+
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Landing logo" class="h-10 w-10" height="40" src="../../assets/logo/logo.png" width="40"/>
+                <a href="../../components/Home/home.html" class="ml-3 text-xl font-bold">Flowbite</a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a class="text-gray-700 hover:text-gray-900" href="../../components/Company/Company.html">Company</a>
+                <a class="text-gray-700 hover:text-gray-900" href="../../components/Marketplace/Marketplace.html">Marketplace</a>
+                <a class="text-gray-700 hover:text-gray-900" href="../../components/Features/Features.html">Features</a>
+                <a class="text-gray-700 hover:text-gray-900" href="../../components/Team/Team.html">Team</a>
+                <a class="text-gray-700 hover:text-gray-900" href="../Contact/Contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a class="text-gray-700 hover:text-gray-900" href="../../components/Login/Login.html">Log in</a>
+                <a class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700" href="../../src/index.html">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-12 px-6">
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h1>
+            <p class="text-gray-600 text-lg">A group of passionate individuals dedicated to creating exceptional digital products.</p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="team-member bg-white rounded-lg shadow-md p-6">
+                <img src="../../assets/Team/ceo.jpeg" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">John Doe</h3>
+                <p class="text-gray-600 mb-4">CEO & Founder</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.linkedin.com/in/sameer-baker-52685a75/" class="text-gray-500 hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/sameer__baker" class="text-gray-500 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="team-member bg-white rounded-lg shadow-md p-6">
+                <img src="../../assets/Team/lead.jpeg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Jane Smith</h3>
+                <p class="text-gray-600 mb-4">Lead Developer</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://github.com/sameerbaker" class="text-gray-500 hover:text-blue-600"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/+972592864042" class="text-gray-500 hover:text-blue-600"><i class="fab fa-stack-overflow"></i></a>
+                </div>
+            </div>
+
+            <div class="team-member bg-white rounded-lg shadow-md p-6">
+                <img src="../../assets/Team/Marketing.jpeg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Peter Jones</h3>
+                <p class="text-gray-600 mb-4">Marketing Manager</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.instagram.com/sameerbaker/profilecard/?igsh=MXRnejl4dDVpbDEybw==" class="text-gray-500 hover:text-blue-600"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/QRaPoGFTpjk13ApH/" class="text-gray-500 hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            </section>
+    </main>
+
+    <footer class="bg-gray-800 py-4 px-6 text-center text-gray-400">
+      <p>&copy; © 2025 FlowBite, Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

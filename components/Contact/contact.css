@@ -1,0 +1,9 @@
+.menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+.menu li {
+    transform-origin: center;
+}

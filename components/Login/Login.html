@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Login Form | Helpme_coder</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes animate {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100%);
+      }
+    }
+
+    .animate-gradient {
+      animation: animate 5s linear infinite;
+    }
+  </style>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-black">
+    
+  <section class="absolute w-full h-full flex flex-wrap justify-center items-center gap-px overflow-hidden">
+    <!-- Animated gradient background -->
+    <div class="absolute w-full h-full bg-gradient-to-b from-black via-red-500 to-black animate-gradient z-0"></div>
+
+    <!-- Background effect spans -->
+    <script>
+      for (let i = 0; i < 256; i++) {
+        const span = document.createElement("span");
+        span.className = "relative block w-[calc(6.25vw-2px)] h-[calc(6.25vw-2px)] bg-[#181818] transition-all duration-[1.5s] hover:bg-red-500 hover:transition-none z-2";
+        document.querySelector("section").appendChild(span);
+      }
+    </script>
+
+    <!-- Sign-in form -->
+    <div class="signin absolute w-[400px] bg-[#222] z-[1000] flex justify-center items-center p-10 rounded-lg shadow-2xl">
+      <div class="content w-full flex flex-col items-center gap-10">
+        <h2 class="text-2xl text-red-500 uppercase">Sign In</h2>
+        <div class="form w-full flex flex-col gap-6">
+          <div class="inputBox relative w-full">
+            <input type="text" class="w-full bg-[#333] border-none outline-none py-6 px-4 pr-10 rounded-lg text-white font-medium text-lg peer" required>
+            <i class="absolute left-0 top-0 px-4 py-6 text-gray-400 peer-focus:text-white peer-focus:text-sm peer-focus:-translate-y-3 transition-all peer-valid:text-white peer-valid:text-sm peer-valid:-translate-y-3">Username</i>
+          </div>
+          <div class="inputBox relative w-full">
+            <input type="password" class="w-full bg-[#333] border-none outline-none py-6 px-4 pr-10 rounded-lg text-white font-medium text-lg peer" required>
+            <i class="absolute left-0 top-0 px-4 py-6 text-gray-400 peer-focus:text-white peer-focus:text-sm peer-focus:-translate-y-3 transition-all peer-valid:text-white peer-valid:text-sm peer-valid:-translate-y-3">Password</i>
+          </div>
+          <div class="links w-full flex justify-between">
+            <a href="#" class="text-white">Forgot Password</a>
+            <a href="#" class="text-red-500 font-semibold">Signup</a>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Login" class="w-full py-3 px-4 bg-red-500 text-black font-semibold text-xl cursor-pointer transition-opacity active:opacity-60">
+          </div>
+          <a href="../../components/Home/home.html" type="button" id="colors-btn" class="text-1xl font-medium text-red-500 uppercase drop-shadow-lg mb-6 hover:bg-blue-950 hover:text-gray-900 transition">
+            Home Page
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
